@@ -32,13 +32,13 @@ _tooGle(){
             <Route path="/todo" component={Todo}/>
             <Drawer open={this.state.draweVisible} docked={false} onRequestChange={() => this._tooGle()}>          
               <List>
-                <ListItem>
+                <ListItem onClick={() => this._tooGle()}>
                   <NavLink to="/">Notas</NavLink>
                 </ListItem>
-                <ListItem>
+                <ListItem onClick={() => this._tooGle()}>
                   <NavLink to="/diario">Diário</NavLink>
                 </ListItem>
-                <ListItem>
+                <ListItem onClick={() => this._tooGle()}>
                   <NavLink to="/todo">Todo</NavLink>
                 </ListItem>                
               </List>
